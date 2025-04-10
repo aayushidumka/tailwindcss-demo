@@ -65,7 +65,7 @@ function App() {
               placeholder="Your Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className= "w-full sm:w-54 md:w-80 p-4 border-3 border-blue-900 rounded-lg focus:outline-none focus:border-blue-500"
+              className= "w-full sm:w-45 md:w-54 p-4 border-3 border-blue-900 rounded-lg focus:outline-none focus:border-blue-500"
             />
           </div>
           {/* Bio textarea */}
@@ -75,7 +75,7 @@ function App() {
               placeholder="Write a short bio about yourself..."
               value={bio}
               onChange={(e) => setBio(e.target.value)}
-              className="w-full sm:w-54 md:w-80 p-4 border-3 border-blue-900 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full sm:w-45 md:w-54 p-4 border-3 border-blue-900 rounded-lg focus:outline-none focus:border-blue-500"
             ></textarea>
           </div>
         </div>
