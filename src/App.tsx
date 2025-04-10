@@ -29,10 +29,10 @@ function App() {
 
   return (
     <>
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <div className="profile-card">
+    <div className="flex flex-col justify-center items-center min-h-screen">
+      <div className="profile-card bg-red-900 p-8 rounded-lg w-70 h-auto shadow-lg">
         {/* Profile image input */}
-        <div className="profile-image">
+        <div className=" bg-blue-900 w-54 h-30 rounded-sm profile-image mb-8 flex justify-center hover:bg-black">
           <input
             type="file"
             accept="image/*"
@@ -43,7 +43,7 @@ function App() {
         
           <div 
             onClick={handleProfileImageClick}
-            className="profile-info"
+            className="profile-info m-4"
           >
             {imageUrl ? (
               <img
@@ -65,24 +65,24 @@ function App() {
               placeholder="Your Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="name-input"
+              className= "w-full sm:w-54 md:w-80 p-4 border-3 border-blue-900 rounded-lg focus:outline-none focus:border-blue-500"
             />
           </div>
           {/* Bio textarea */}
           <div className="mb-6">
             <textarea
-              rows="3"
+              rows={3}
               placeholder="Write a short bio about yourself..."
               value={bio}
               onChange={(e) => setBio(e.target.value)}
-              className="bio-textarea"
+              className="w-full sm:w-54 md:w-80 p-4 border-3 border-blue-900 rounded-lg focus:outline-none focus:border-blue-500"
             ></textarea>
           </div>
         </div>
 
         {/* Save Changes Button */}
-        <div className="save-button">
-          <button>
+        <div className="w-full mt-4 p-6">
+          <button className=" bg-blue-900 text-amber-200 border-4 rounded-lg hover:bg-black" >
             Save Changes
           </button>
         </div>
